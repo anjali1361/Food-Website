@@ -1,0 +1,257 @@
+*{
+    margin: 0rem;
+    padding:0rem;
+}
+body{
+    background-color: white;
+}
+/* css variable */
+:root{
+    --navbar-height: 1rem;
+}
+
+/* navigation bar logo and image */
+#logo{
+    margin: 0em .5em;
+    height: var(--navbar-height);
+
+
+}
+#logo img{
+   height: 4em;
+   margin-top: .1rem;
+
+
+}
+/* beautify navigation bar */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    opacity: .55;
+   
+}
+
+/* styling ul */
+#navbar ul{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#navbar::before{
+   content: "";
+   background-color: black;
+   top: 0px;
+   left: 0px;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: .72;
+
+}
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+padding: 1em 1em;
+
+}
+#navbar ul li a{
+       display: block;
+       padding: 0em 1em;
+       border-radius: 1em;
+       color: white;
+       text-decoration: none;
+    
+    }
+
+    #navbar ul li a:hover{
+       color: black;
+       background-color: white;
+     
+     }
+
+     /* styling home section */
+     #home{
+         display: flex;
+         flex-direction: column;
+         padding: 0em 5em;
+         height: 23rem;
+         align-items: center;
+         justify-content: center;
+     }
+     #home::before{
+        content: "";
+        top: 0px;
+        left: 0px;
+        background: url("bg1.jpeg") no-repeat center center/cover;
+        position: absolute;
+        height: 65%;
+        width: 100%;
+        z-index: -1;
+        opacity: .89;
+      
+    }
+    #home h1{
+        color: white;
+        text-align: center;
+    }
+
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Ubuntu', sans-serif;
+        padding-top: .6rem;
+    }
+
+    /* services section */
+    #services{
+        /* margin: -3rem; */
+        display: flex;
+    }
+
+    #services .box{
+
+      border: 2px solid rgb(107, 107, 110);
+      background-color: #ccbac6;
+      border-radius: .8rem;
+      margin: 2rem .8rem;
+    
+    }
+    #services .box img{
+       height: 10rem;
+       width: 15rem;
+       display: block;
+       margin: auto;  
+      }
+ .services-container {
+        text-align: center;
+        margin-top: -24.4rem;
+    
+ }
+ .services-container h1 {
+     font-size: 2.8rem;
+     font-style: bold;
+    text-align: center;
+    margin-top: 23rem;
+
+}
+ .services-container p{
+        text-align: center; 
+        font-family: 'Ubuntu', sans-serif; 
+
+}
+
+/* client section */
+#client-section{
+    height: 15rem;
+    margin-top: 4rem;
+  
+}
+
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url("bg2.jpeg") no-repeat center center/cover;
+   width: 100%;
+   height: 30%;
+   z-index: -1;
+   opacity: .5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+#clients img{
+    height: 3.5rem;
+}
+#client-section h1{ 
+    margin-top: -2rem;
+  padding-top: 1rem;
+} 
+.client-item{
+    padding: 1rem 1rem;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+   content: "";
+   background: url("contact.jpeg") no-repeat center center/cover;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   opacity: 0.8;
+   z-index: -1;
+   
+}
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 5rem;
+
+}
+#contact-box input,#contact-box textarea{
+
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+    
+}
+
+
+#contact form{
+    width: 45%;    
+}
+
+#contact form label{
+    font-size: 1.3rem; 
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;  
+}
+footer{
+    background: black;
+    color: white;
+    font-size: 1.7rem;
+    padding: .5rem;
+}
+
+
+    /* utility classess */
+    .h-primary{
+        font-size: 2.8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        /* margin-top: 13rem; */
+    }
+    .h-secondary{
+        font-size: 1.8rem;
+        padding: .8rem;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+     
+    }
+    .btn{
+        padding: .3rem .8rem;
+        border: 2px solid white;
+        background-color: black;
+        margin: .7rem;
+        font-size: 1.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: .4rem;
+        cursor: pointer;
+        color: white;
+    }
+   .center{
+    text-align: center;
+
+   }

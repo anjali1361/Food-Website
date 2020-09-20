@@ -1,0 +1,93 @@
+/* navigation fix */
+#navbar{
+    flex-direction: column;
+
+}
+#navbar ul li{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: .65rem;
+    
+    }
+    #navbar ul{
+       justify-content: center;
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+       
+    }
+
+
+/* home fix */
+#home{
+    height:19rem;
+    padding: 0em 5em;
+
+}
+#home::before{
+    height: 70%;
+
+}
+
+/* services fix */
+#services{
+    flex-direction: column;
+}
+.services-container {
+    margin-top: -19.5rem;
+
+}
+.services-container h1 {
+    margin-top:24rem;
+    font-size: 2rem;
+    padding: .2rem;
+
+}
+/* client fix */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 1.3rem;
+    height: 3rem;
+}
+/* contact fix */
+#contact-box input,#contact-box textarea{
+
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: .4rem;
+    font-size: .8rem;
+    
+}
+
+#contact form label{
+    font-size: 1rem; 
+  
+}
+/* footer fix */
+footer{
+    font-size: 1.1rem;
+    padding: .2rem;
+}
+/* utility classes */
+.h-primary{
+    font-size: 1.6rem;
+    padding: .2em 4em;
+}
+.h-secondary{
+    font-size: 1.2rem;
+ 
+}
+.btn{
+    padding: .3em 1em;
+    font-size: .7rem;
+    color: white; 
+}
+.center{
+    font-size: .9rem;  
+
+   }
